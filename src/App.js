@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {NewPost} from './components/Firestore/NewPost'
+import {ReadingDB} from './components/Firestore/ReadingDB'
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hola mudo
+          Hola mundo
         </p>
         <a
           className="App-link"
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <h1>C.R.U.D.</h1>
+      <NewPost/>
+      <ReadingDB/>
+     
     </div>
   );
 }
